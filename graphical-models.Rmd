@@ -104,7 +104,7 @@ DiagrammeR::DiagrammeR("scripts/SLiM.gv", type='grViz', width=500, height=250))
 
 <!-- <img src="img/regasgraph.png" style="display:block; margin: 0 auto; width:50%"> -->
 
-While we start simpler, we can use much of the same sort of thinking with more complex models later.  In what follows, we'll show that whether we use a standard R modeling approach (via the <span class="func">lm</span> function), or an SEM approach (via the <span class="func">sem</span> function in <span class="pack">lavaan</span>), the results are identical aside from the fact that sem is using maximum likelihood (so the variances will be slightly different).  First, we'll with the standard <span class="func">lm</span> approach.
+While we start simpler, we can use much of the same sort of thinking with more complex models later.  In what follows, we'll show that whether we use a standard R modeling approach (via the <span class="func">lm</span> function), or an SEM approach (via the <span class="func">sem</span> function in <span class="pack">lavaan</span>), the results are identical aside from the fact that sem is using maximum likelihood (so the variances will be slightly different).  We'll begin with the standard <span class="func">lm</span> approach.
 
 ```{r lmvslavaan1, cache=TRUE}
 mcclelland = haven::read_dta('data/path_analysis_data.dta')
