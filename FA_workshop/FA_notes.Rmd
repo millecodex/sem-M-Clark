@@ -75,7 +75,7 @@ This document is meant to be high level.  For more details preuse my document on
 
 ## Principal Components Analysis
 
-We'll start with one of the most widely used techniques for dimension reduction. With <span class="emph">principal components analysis</span> (PCA), we seek to find orthogonal (i.e. uncorrelated) factors to maximize the variance accounted for by each factor.  For some data, $X$ is the $NxD$ matrix of $N$ observations of $D$ variables.  We decompose X into two matrices - $Z$ are the $N x L$ component scores where $L <= D$, while $W$ are the $DxL$ weights, typically referred to as the <span class="emph">factor loading</span> matrix.
+We'll start with one of the most widely used techniques for dimension reduction. With <span class="emph">principal components analysis</span> (PCA), we seek to find orthogonal (i.e. uncorrelated) factors to maximize the variance accounted for by each factor.  For some data, $X$ is the $NxD$ matrix of $N$ observations of $D$ variables.  We decompose $X$ into two matrices - $Z$ are the $N x L$ component scores where $L <= D$, while $W$ are the $DxL$ weights, typically referred to as the <span class="emph">factor loading</span> matrix.
 
 $$X = ZW'$$
 
