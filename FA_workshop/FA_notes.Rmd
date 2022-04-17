@@ -254,7 +254,7 @@ fa_model = fa(bfi_trim, 2)
 fa_model
 ```
 
-The results in terms of loadings are similar to the PCA. But we can see some differences. The PCA components accounted for `r round(sum(colSums(pc$loadings^2))/p, 2)*100`% the variance, while here we only account for `r round(sum(colSums(fa_model$loadings^2))/p, 2)*100`%.  In addition, we have an estimate of the correlation of the latent factors, `r round(fa_model$Phi[2], 2)`, where the PCA components are uncorrelated by definition.  And finally, there are measures of 'fit' that come from the structural equation modeling context. See [this](https://m-clark.github.io/sem/structural-equation-modeling.html#fit) for more detail on those measures.  I will note however that BIC is provided, which allows for a way to compare different factor solutions.
+The results in terms of loadings are similar to the PCA. But we can see some differences. The PCA components accounted for `r round(sum(colSums(pc$loadings^2))/p, 2)*100`% the variance, while here we only account for `r round(sum(colSums(fa_model$loadings^2))/p, 2)*100`%.  In addition, we have an estimate of the correlation of the latent factors, `r round(fa_model$Phi[2], 2)`, where the PCA components are uncorrelated by definition.  And finally, there are measures of 'fit' that come from the structural equation modeling context. See [this](https://m-clark.github.io/sem/sem.html#fit) for more detail on those measures.  I will note however that BIC is provided, which allows for a way to compare different factor solutions.
 
 ```{r fa_LoadingsVis, echo=F, cache=FALSE}
 tags$div(style="width:50%; margin-left:auto;  margin-right:auto",
